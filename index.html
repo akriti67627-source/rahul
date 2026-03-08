@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Private Access</title>
+</head>
+
+<body style="background:black;color:#00ff99;font-family:monospace;text-align:center;padding-top:120px;">
+
+<h2>🔐 Private Message</h2>
+
+<p>Enter Secret Code</p>
+
+<input type="password" id="pass">
+
+<br><br>
+
+<button onclick="unlock()">Unlock</button>
+
+<p id="error"></p>
+
+<script>
+
+function unlock(){
+
+let p=document.getElementById("pass").value;
+
+if(p=="love23"){
+window.location="page1.html";
+}
+
+else{
+document.getElementById("error").innerHTML="Wrong password";
+}
+
+}
+
+</script>
+
+</body>
+</html>
