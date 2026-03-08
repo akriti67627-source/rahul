@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello</title>
+</head>
+
+<body style="background:black;color:#00ff99;font-family:monospace;padding:40px;">
+
+<h3>// initializing_message</h3>
+
+<p id="text"></p>
+
+<script>
+
+const message = `
+Hello :)
+
+Someone built this small website just for you.
+
+So read everything slowly.
+`;
+
+let i = 0;
+
+function type(){
+if(i < message.length){
+document.getElementById("text").innerHTML += message.charAt(i);
+i++;
+setTimeout(type,30);
+}
+}
+
+type();
+
+</script>
+
+<br><br>
+
+<a href="page2.html" style="color:#00ff99;">Continue →</a>
+
+</body>
+</html>
